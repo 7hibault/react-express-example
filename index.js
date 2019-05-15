@@ -18,8 +18,8 @@ app.get('*', (req,res) =>{
     res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
-const port = process.env.PORT || 5000;
-console.log(port);
-app.listen(port);
+// const port = process.env.PORT || 5000;
+// app.listen(port);
+app.listen(8080);
 
 console.log('App is listening on port ' + port);
